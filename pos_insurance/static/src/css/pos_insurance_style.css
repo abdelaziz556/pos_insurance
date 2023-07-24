@@ -1,0 +1,15 @@
+.insurance_tag{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 250%;
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+}
+.is_insurance_covered{
+     background-color: #27b376;
+}
+.is_not_insurance_covered{
+     background-color: #bf212f;
+}

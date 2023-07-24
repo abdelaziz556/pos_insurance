@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="PopUpInsurancePolicyNumber" owl="1">
+        <div role="dialog" class="modal-dialog">
+            <div class="popup popup-selection">
+                <header class="title">Customer Policy Number</header>
+                <main class="body traceback" style="font-family: 'Lato-Reg';text-align: center;">
+                    <p style="color: #875a7b;font-size: 1.5rem;">Please enter the insurance policy number for the customer</p>
+                    <input id ="customer_policy_number" type="text" class="input-field" name="customer_policy_number" required="1"></input>
+                </main>
+                <footer class="footer">
+                    <div class="button confirm" t-on-click="confirm">Confirm</div>
+                    <div class="button cancel" t-on-click="cancel">Cancel</div>
+                </footer>
+            </div>
+        </div>
+    </t>
+</templates>

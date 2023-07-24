@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<odoo>
+    <!--    Tree View-->
+    <record id="view_insurance_claim_tree" model="ir.ui.view">
+        <field name="name">insurance.claim.tree</field>
+        <field name="model">insurance.claim</field>
+        <field name="arch" type="xml">
+            <tree create="0" edit="0" delete="0">
+                <field name="partner_id"/>
+                <field name="insurance_policy_number"/>
+                <field name="product_id"/>
+                <field name="order_id"/>
+            </tree>
+        </field>
+    </record>
+    <!--Action -->
+    <record id="action_insurance_claim_list" model="ir.actions.act_window">
+        <field name="name">Insurance Claims</field>
+        <field name="res_model">insurance.claim</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <!-- Menus-->
+    <menuitem id="menu_insurance_claim_list" name="Insurance Claims" parent="point_of_sale.menu_point_of_sale"
+              action="action_insurance_claim_list"/>
+</odoo>

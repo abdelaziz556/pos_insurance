@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="PopUpSelectionInsurance" owl="1">
+        <div role="dialog" class="modal-dialog">
+            <div class="popup popup-selection">
+                <header class="title">Add Insurance to Selected Product</header>
+                <footer class="footer">
+                    <div class="button add_insurance" t-on-click="add_insurance">Add Insurance</div>
+                    <div class="button skip_insurance" t-on-click="skip_insurance">Skip Insurance</div>
+                    <div class="button cancel" t-on-click="cancel">Cancel</div>
+                </footer>
+            </div>
+        </div>
+    </t>
+</templates>
